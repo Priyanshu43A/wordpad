@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+   <h1 id="title">Text Editor</h1>
+   <div id="container">
+   <button onclick="chngclr()" id="color">set color</button>
+ <input id="givec" placeholder="#1626D5" type="text" name="" id="">
+ <button onclick="setImg()" id="pic">Add image</button>
+ <input id="plink" placeholder="Image link" type="text" name="" id="">
+ <button onclick="makeBold()" >bold</button>
+  <button onclick="makeItalic()" >italic</button>
+   <button onclick="makeUnderline()" >underline</button>
+   <button onclick="makeMono()">monospace</button>
+    <button onclick="defaultt()">Remove format</button>
+    <br> <br>
+    <textarea placeholder="
+   • click on buttons to add and remove text styles.
+   • Enter your text here.
+   • To add a image.please enter a proper link." id="write" name="" id="" cols="35" rows="20"></textarea>
+    <button onclick="save()" id="save">Save</button>
+     <button onclick="dlt()" id="call" type="reset">Clear All</button>
+     </div>
+     <div class="output">
+       <h2>Your saved text:</h2> <br>
+       <p id="para"></p>
+       <img id="pic_final" src="" alt="">
+     </div>
+   <script src="main.js"></script>
+</body>
+</html>

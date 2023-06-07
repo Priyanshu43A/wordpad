@@ -1,0 +1,101 @@
+ @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+body {
+  font-size: 15pt;
+  background-color: #1684C154;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+#title, h2{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#container{
+  background-color: #161EC126;
+  padding: 5vw;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: repeat(22,4vh);
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-auto-rows: 1fr;
+}
+#color,#pic{
+  grid-column: 1/2;
+}
+#givec,#plink{
+  grid-column: 2/5;
+  border: 1px solid black;
+  padding: 0 5px;
+}
+#givec,#color{
+  grid-row: 1/2;
+  
+}
+#pic, #plink{
+  grid-row: 2/3;
+}
+#write{
+  grid-row: 5/20;
+  grid-column: 1/-1;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+#save, #call{
+  grid-row: 20/21;
+}
+button{
+  font-size: 7pt;
+  font-weight: 1000;
+  border: 1px solid #183AD1D4;
+  border-radius: 10px;
+  color: #0A0B68;
+  background-color: aliceblue;
+}
+
+
+.underline{
+  
+  text-decoration-line: underline;
+}
+.bold{
+  font-weight: bolder;
+}
+.italic{
+  font-style: italic;
+}
+.monospace{
+  font-family:  'Yeon Sung','monospace';
+  
+}
+
+#para{
+  margin: 5px;
+  align-self: flex-start;
+}
+img{
+  max-width: 90vw;
+  border-radius: 10px;
+}
+.output{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  place-content: center;
+  background-color: #CE204BDB;
+  border: 2px solid black;
+  margin: 3px;
+    padding: 5px 10px;
+
+}
+#save{
+  grid-column: 2/3;
+}
+#call{
+  grid-column: 3/4;
+}
